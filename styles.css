@@ -1,0 +1,68 @@
+html {
+    background-color: orange;
+    font-family: 'Segoe UI', sans-serif;
+}
+.big-box {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px white;
+    color: pink;
+    margin-bottom: 20px;
+}
+.setting {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+}
+
+button {
+    background-color: pink;
+    border: solid 1px pink;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #ff99cc;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: pink;
+    padding: 2px;
+    width: 480px;
+    height: 480px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.box {
+    background-color: #F8C90D;
+    border: dotted 1px pink;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
