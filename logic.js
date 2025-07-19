@@ -1,6 +1,7 @@
 const container = document.querySelector('.container');
 const btnBoxesPerRow = document.querySelector('.boxesPerRow');
 const btnClear = document.querySelector('.clear');
+const inputBoxPerRow = document.getElementById('boxesPerRow');
 
 //creat boxes
 function makeboxes (boxes) {
@@ -32,9 +33,9 @@ function markTrail(){
 
 //box per row button
 btnBoxesPerRow.addEventListener('click', () => {
-const value = document.getElementById('boxesPerRow').value;
-    if (value > 0 && value < 100) {
-        makeboxes(value);
+    const inputValue = inputBoxPerRow.value;
+    if (inputValue > 0 && inputValue < 100) {
+        makeboxes(inputValue);
     } else {
         alert("Please enter a number between 1 and 99.")
     }
@@ -43,8 +44,8 @@ const value = document.getElementById('boxesPerRow').value;
 
 // clear
 btnClear.addEventListener('click', () => {
-    const value = document.getElementById('boxesPerRow').value;
-    makeboxes(value > 0 ? value : 3);
+    const inputValue = inputBoxPerRow.value;
+    makeboxes(inputValue > 0 ? inputValue : 3);
     markTrail()
 });
 
